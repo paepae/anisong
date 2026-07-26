@@ -1,0 +1,20 @@
+{
+  "name": "anisong",
+  "version": "0.1.0",
+  "description": "A distilled toolkit of skills for personal and family AI agents — the parts worth keeping from a lot of community tinkering, cleaned up and given back.",
+  "author": {
+    "name": "paepae",
+    "url": "https://github.com/paepae"
+  },
+  "license": "MIT",
+  "keywords": [
+    "agent-skills",
+    "skills",
+    "prompts",
+    "technical-writing",
+    "documentation",
+    "claude-code"
+  ],
+  "repository": "https://github.com/paepae/anisong",
+  "homepage": "https://github.com/paepae/anisong"
+}

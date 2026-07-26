@@ -1,0 +1,31 @@
+{
+  "name": "anisong",
+  "description": "Anisong (อานิสงส์) — a distilled toolkit of skills for personal and family AI agents",
+  "owner": {
+    "name": "paepae",
+    "url": "https://github.com/paepae"
+  },
+  "plugins": [
+    {
+      "name": "anisong",
+      "source": "./",
+      "description": "A distilled toolkit of skills for personal and family AI agents. Includes lean-writing: the snapshot contract that keeps agent-written files free of changelog prose.",
+      "version": "0.1.0",
+      "author": {
+        "name": "paepae",
+        "url": "https://github.com/paepae"
+      },
+      "license": "MIT",
+      "category": "productivity",
+      "keywords": [
+        "agent-skills",
+        "skills",
+        "technical-writing",
+        "documentation"
+      ],
+      "skills": [
+        "./skills/lean-writing"
+      ]
+    }
+  ]
+}
