@@ -21,6 +21,12 @@ An artifact (code, comment, doc section, config) contains exactly two things:
    A reason that only justifies a past decision belongs in the commit message
    or ticket.
 
+A why that asserts how something *else* behaves — a library call, a stdlib
+default, a CLI's verbosity — is **probed** before it is written: run the
+smallest thing that prints the answer, and write down what it printed. Recalled
+behaviour is the most durable kind of wrong, because the comment stating it
+outlives every reader who might have checked.
+
 And it holds to the reader's standard: unambiguous, internally consistent,
 matching sibling entries in weight and shape, complete enough that nothing
 forces a cross-reference, and no wordier than its content demands — every
@@ -39,6 +45,11 @@ The update is done when the **whole file** is true, not just the section you
 came for: check every other claim the file makes against the system's current
 state (read the code it describes), and give any stale one the same in-place
 rewrite. An artifact that contradicts the system is worse than a missing one.
+
+The sweep starts in the sentence you are standing in. A false claim keeps
+**siblings** — the other half of its own sentence, the next row of its table,
+the bullet under it — written by one hand on one day from one wrong belief, so
+they fail together. Clear the siblings, then the file, then the repo.
 
 The sweep is **repo-wide** — every file that describes the changed system, not
 only the directories you edited. Two categories stay out, because they are
@@ -98,8 +109,14 @@ had always been this way. It contains exactly two things — what the thing is a
 in present tense, and any reason that still constrains the reader's next action.
 
 Verify the whole file, not just the section you came for: check every other claim the
-file makes against the code it describes, and rewrite any stale one in place. A file
-that contradicts the system is worse than a missing one.
+file makes against the code it describes, and rewrite any stale one in place. Start with
+the siblings of the claim you came to fix — the other half of its sentence, the next row
+of its table — which fail with it. A file that contradicts the system is worse than a
+missing one.
+
+Any claim about how something else behaves — a library call, a stdlib default, a CLI's
+verbosity — gets run before it is written. Write down what it printed, not what you
+recall.
 
 Every comparative word — previously, formerly, no longer, used to, now, still, old,
 new — needs a referent the reader can see in the artifact itself. Keep the ones that
